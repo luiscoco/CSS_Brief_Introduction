@@ -6,8 +6,6 @@ CSS, or Cascading Style Sheets, is a stylesheet language used to describe the pr
 
 CSS defines how elements should be rendered on screen, on paper, in speech, or on other media
 
-## Basics of CSS
-
 CSS is used to control the layout of web pages with styles and design elements such as colors, fonts, and spacing
 
 It allows you to apply styles to HTML elements selectively, using selectors based on element types, class names, ID, or attributes
