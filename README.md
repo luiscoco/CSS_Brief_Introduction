@@ -171,7 +171,125 @@ You can use them directly in a project or modify them according to your needs
 
 Each example demonstrates a fundamental aspect of CSS that can be expanded upon or combined with other CSS features to create rich, interactive web experiences
 
+Let’s dive into some more advanced CSS samples that demonstrate animations, grid layouts, and advanced selectors. These examples will help you utilize CSS to create more sophisticated and interactive web designs.
 
+## CSS Animations: Keyframes
+
+CSS animations are powerful for creating smooth, animated changes to the properties of HTML elements
+
+Here's an example of using keyframes to animate an element continuously:
+
+**CSS (style.css)**
+
+```css
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: spin 2s linear infinite;
+}
+```
+
+**HTML (index.html)**
+
+```html
+<div class="spinner"></div>
+```
+
+## CSS Grid Layout: Responsive Gallery
+
+CSS Grid is a powerful tool for creating complex and responsive layouts
+
+Here’s an example of a responsive image gallery using CSS Grid:
+
+**CSS (style.css)**
+
+```css
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images cover the grid item */
+}
+```
+
+**HTML (index.html)**
+
+```html
+<div class="gallery">
+    <img src="image1.jpg" alt="Gallery Image 1">
+    <img src="image2.jpg" alt="Gallery Image 2">
+    <img src="image3.jpg" alt="Gallery Image 3">
+    <img src="image4.jpg" alt="Gallery Image 4">
+</div>
+```
+
+## Advanced Selectors: Styling Forms and Inputs
+
+Using advanced CSS selectors, you can style different states of form elements, enhancing the user interface of forms:
+
+**CSS (style.css)**
+
+```css
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4A90E2;
+    outline: none; /* Removes the default focus outline */
+}
+```
+
+**HTML (index.html)**
+
+```html
+<form action="">
+    <input type="text" placeholder="Your name..." name="name">
+    <input type="email" placeholder="Your email..." name="email">
+    <textarea placeholder="Enter message..."></textarea>
+    <input type="submit" value="Submit">
+</form>
+```
+
+These advanced examples showcase how CSS can be used to create dynamic, responsive, and visually appealing web designs
+
+They provide a foundation for exploring more complex features and techniques in CSS to enhance your web development projects
 
 
 
